@@ -11,7 +11,12 @@ function App() {
       {/* destaque */}
       {/* Em alta */}
       {categories.map( (category) => {
-        return <Row key={category.name} title={category.title} path={category.path} />
+        return <Row 
+                  key={category.name} 
+                  title={category.title} 
+                  path={category.path}
+                  isLarge={category.isLarge}
+                 />
       } )}
 
     </div>
